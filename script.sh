@@ -54,6 +54,8 @@ ambari-server install-mpack --mpack=hdf-ambari-mpack-3.0.0.0-453.tar.gz --verbos
 sed -i.bak 's/localhost/10.248.12.249/g' /etc/ambari-agent/conf/ambari-agent.ini
 ambari-server restart
 ambari-agent start
+ambari-server status
+ambari-agent status
 #git config --global url."https://".insteadOf git://
 #git clone git://github.com/devstructure/blueprint.git
 #cd blueprint/
